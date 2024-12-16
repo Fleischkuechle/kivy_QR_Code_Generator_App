@@ -16,9 +16,13 @@ class QR_Code_Generator_App(App):
     def build(self):
         layout = BoxLayout(orientation="vertical", padding=20, spacing=10)
         self.Main_Color = get_color_from_hex("171514")
+        # self.input_text = TextInput(
+        #     hint_text="Enter text",
+        #     multiline=False,
+        # )
         self.input_text = TextInput(
             hint_text="Enter text",
-            multiline=False,
+            multiline=True,
         )
         self.input_text.size_hint_max_y = 40
         layout.add_widget(self.input_text)
