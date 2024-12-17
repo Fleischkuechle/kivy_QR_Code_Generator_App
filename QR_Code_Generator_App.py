@@ -58,7 +58,7 @@ class QR_Code_Generator_App(App):
                     # box_size=10,
                     # border=5,
                 )
-                qr.add_data(qr_text)
+                qr.add_data(data=qr_text)
                 qr.make(fit=True)
                 img: pil_img.Image = qr.make_image(
                     fill_color="black",
